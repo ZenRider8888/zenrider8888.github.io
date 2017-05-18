@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap: style your page like twitter -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- theme files: used to style over default bootstrap -->
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <link rel="stylesheet" type="text/css" href="theme3.css">
+    <!-- <link rel="stylesheet" type="text/css" href="theme4.css"> -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css: used to apply quick css animations -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!--our own custom css overrides-->
+    <link rel="stylesheet" href="custom.css">
+
+    <!-- use this style for testing and development purposes only -->
+    <!--<style type="text/css">
+        .container {
+            border: 2px dotted green;
+        }
+
+        .row {
+            border: 1px dotted red;
+        }
+
+        .row [class*=' col-'] {
+            border: 2px dotted purple;
+        }
+    </style>-->
+
+</head>
+
+<body>
+
+    <!-- to disable sticking bar to screen, remove class: navbar-fixed-top -->
+<nav class="navbar navbar-default navbar-fixed-top">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- hamburger button. do not touch! -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+      <a class="navbar-brand" href="#">
+          <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+          <i class="fa fa-telegram"></i>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- THIS UL HANDLES OUR LINKS -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://facebook.com">facebook</a></li>
+        <li><a href="http://facebook.com">facebook2</a></li>
+        <!-- to make more links, make some <li> in here -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!--containter for page-->
+    <div class="container">
+        <!--start of row 1-->
+        <div class="row">
+        
+            <!--start of column-->
+            <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12">
+                
+                        
+                <div class="jumbotron" style="background-image: url('https://static1.squarespace.com/static/546ad0dfe4b035b86c886fdb/5487d5b8e4b05c1d23999552/5487d5bfe4b0e5cca168d8b3/1418188223029/refuge_prospect_cover_01.jpg')">
+                    
+                    <h1 class="wow zoomIn">Hello, world!</h1>
+                    <p>...</p>
+                    <p><a class="btn btn-primary btn-lg" href="" role="button">Learn more</a></p>
+            
+                </div>
+            </div>
+            <!-- end of col-->
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <!-- end of row 1 -->
+        <!--Start of row2-->
+        <div class="row">
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+                <a href="#" class="thumbnail">
+                    <img src="http://kokofeed.com/wp-content/uploads/2015/05/red-wine.jpg" alt="thumnails">
+                </a>
+
+
+            </div>
+            <!--end of colume1-->
+                
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+                <a href="#" class="thumbnail">
+                    <img src="http://kokofeed.com/wp-content/uploads/2015/05/red-wine.jpg" alt="thumbnails">
+                     </a>
+
+            </div>
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+                <a href="#" class="thumbnail">
+                    <img src="http://cf.ltkcdn.net/wine/images/std/148966-283x424-bottle-of-white-wine.jpg" alt="thumnails">
+                    </a>
+
+            </div>
+
+
+        </div>
+        <!--row2: Thumbnails-->
+
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" background-size="cover"> 
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uZst5nbwLRU"></iframe>
+                </div>
+
+            </div>
+        </div>
+<!--
+
+        <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    </div>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cIClhbmBfXE"></iframe>
+            </div>
+        </div>
+
+-->
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <h3 class="text-center">Sign Up</h3>
+                <div class="form-group">
+
+                    <label for="name-id">name</label>
+                    <input ype="text" name="USERNAME" id="name-id" class="form-control">
+                </div>
+
+                <div class="radio">
+                    <label>
+                            <input type="radio"
+                            id="radio-id"
+                            name="GENDER"
+                            value="male">
+                            male
+
+                            </label>
+                </div>
+
+
+                <div class="radio">
+                    <label>
+                            <input type="radio"
+                            id="radio-id"
+                            name="GENDER"
+                            value="female">
+                            female
+
+                            </label>
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email-id">email </label>
+                    <input type="email" name="EMAIL" id="email-id" class="form-control">
+                </div>
+
+
+                <div>
+                    <input type="submit">
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+                <h1 class="text-center"> This is a title to the text </h1>
+
+                <p class="text-center" style="font-size:2rem">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, odio distinctio porro error. Perspiciatis magnam,
+                    laboriosam molestiae eveniet quibusdam culpa recusandae est repellendus nesciunt accusamus, aliquid,
+                    autem, ipsa non officia.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!--beginning of row4-->
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+                <h3 class="wow bounce">Operating Hours</h3>
+                <table class="table">
+
+
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+
+                    <tr>
+                        <td>Monday to Thursday</td>
+                        <td>9am - 5pm</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday and Saturday</td>
+                        <td>$11am - 3am</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sunday</td>
+                        <td>closed</td>
+                    </tr>
+                </table>
+            </div>
+            <!--end of table-->
+            <!--beginning of colum2 map-->
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="embed-responsive embed-responsive-4by3">
+                <iframe src="https://goo.gl/2rkrL7" class="responsive-embed"></iframe>
+                </div>
+            </div>
+            <!--end of colum2 map-->
+
+<!--beginning of colum3 table-->
+
+            <div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                     <h3 class="wow zoomIn">Check me out</h3>
+                    <ul class="list-inline test-center">
+                        <li>
+                            <a href="#">
+                                <i class=fa fa-camera-retro fa-3x text-success"></i>
+                            </a>
+                        
+                
+
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                        <i class="fa fa-phone fa-fw"></i> +65 123 456 789
+                        </a>
+                        <a href="#" class="list-group-item">
+                        <i class="fa fa-envelope fa-fw"></i> hello@meet.me
+                        </a>
+                    </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- end of theh cotainer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery: used by bootstrap.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- bootstrap js: used to run fancy components like carousel -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- wow.js: used to make animate.css run on view -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
